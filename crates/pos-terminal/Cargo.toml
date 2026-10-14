@@ -1,0 +1,17 @@
+[package]
+name = "pos-terminal"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+crossterm.workspace = true
+pos-core = { path = "../pos-core" }
+pos-devices = { path = "../pos-devices" }
+pos-print = { path = "../pos-print" }
+pos-storage = { path = "../pos-storage" }
+thiserror.workspace = true
+
+[dev-dependencies]
+tempfile = "3"
+

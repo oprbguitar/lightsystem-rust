@@ -1,0 +1,25 @@
+commercial_name = "MiniPOS Demo"
+store_logo_text = "[ MINIPOS ]"
+store_address = ""
+store_phone = ""
+instance_id = "CAJA01"
+currency = "PEN"
+database_file = "minipos.sqlite3"
+sync_interval_seconds = 60
+update_mode = "manual"
+
+[printer]
+kind = "virtual"
+name = ""
+
+[connection]
+kind = "standalone"
+server_address = ""
+
+[interface]
+columns = 80
+rows = 25
+font_size = 16
+header_color = "blue"
+text_color = "green"
+background_color = "black"

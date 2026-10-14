@@ -1,0 +1,30 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/pos-core",
+    "crates/pos-storage",
+    "crates/pos-terminal",
+    "crates/pos-devices",
+    "crates/pos-print",
+    "crates/pos-sync",
+    "apps/minipos",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "UNLICENSED"
+rust-version = "1.89"
+
+[workspace.dependencies]
+chrono = { version = "0.4", features = ["serde", "clock"] }
+clap = { version = "4", features = ["derive"] }
+crossterm = "0.28"
+fs2 = "0.4"
+rusqlite = { version = "0.32", features = ["bundled", "chrono"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+toml = "0.8"
+uuid = { version = "1", features = ["v4", "serde"] }
+
